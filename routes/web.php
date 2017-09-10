@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home',function(){
+	$name ="Ping";
+	return view('home')->with('name',$name)->with('coe','coe');
+});
